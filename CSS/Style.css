@@ -1,0 +1,467 @@
+/* Estilos Generales */
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    gap: 5rem;
+    display: inline-block;
+
+}
+
+li {
+    display: inline-block;
+    padding: 3px;
+}
+
+li:hover a {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.788);
+}
+
+.titulo {
+    color: rgba(105, 101, 101, 0.548);
+}
+
+/* Estilos Header */
+
+.fondotitulo {
+    background-image: url(../Img/Presentacion/nuevofondohe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+
+
+}
+
+.Logoempresa {
+    width: 30%;            
+    max-width: 200px;       
+    min-width: 80px;        
+    height: auto;
+    display: block;
+}
+
+.fondotitulo-header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.menusuperior ul li a {
+    color: rgba(255, 255, 255, 0.842);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.li{
+    width: 90%;
+}
+
+
+.nombreempresa {
+    color: rgba(255, 0, 0, 0.76);
+    text-transform: uppercase;
+    font-size: 2rem;
+    
+}
+
+.sub {
+    color: rgba(245, 245, 245, 0.76);
+}
+
+/* Main */
+.main {
+    background-color: rgba(10, 20, 40);
+    padding: 0.5rem;
+}
+.cajatitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tituloepp {
+    color: rgb(0, 0, 255);
+    font-size: 2rem;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+   
+    
+}
+
+.equipotitulo {
+    color: rgba(181, 181, 196, 0.884);
+    background-color: rgba(105, 101, 101, 0.288);
+    background-image: url(../Img/Presentacion/fondotitulos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+    min-height: 8vh;
+
+}
+
+/* cascos */
+.cascos-general {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    position: relative;
+    gap: 1rem;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.cascobul {
+     width: 90%;
+    background-color: rgba(149, 155, 71, 0.733);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:auto;
+    padding: 1rem;
+    max-width: 300px;
+    flex: 1 1 200px;
+    
+}
+
+.cascoros {
+    width: 90%;
+    background-color: rgba(149, 155, 71, 0.733);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:auto;
+    padding: 1rem;
+    max-width: 300px;
+}
+
+.cascoimg {
+     width: 70%;
+    max-height: 10rem;
+    object-fit: contain
+}
+
+
+/* ropa */
+.ropa-general {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    position: relative;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.ropamsa {
+   width: 90%;
+    max-width: 300px;
+    background-color: rgba(149, 155, 71, 0.733);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    height: auto;
+}
+
+.roparos {
+    width: 90%;
+    max-width: 300px;
+    background-color: rgba(149, 155, 71, 0.733);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    height: auto;
+    flex: 1 1 200px;
+    box-sizing: content-box;
+}
+.ropamsa p,
+.roparos p {
+   font-size: 1rem;
+    text-align: center
+}
+.ropamsa img,
+.roparos img {
+    width: 70%;
+    max-height: 10rem;
+    object-fit: contain;
+}
+
+/* botas */
+.botas {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    position: relative;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 2rem;
+    flex: 1 1 200px;
+}
+
+.botasa,
+.botasb {
+    width: 90%;
+    background-color: rgba(149, 155, 71, 0.733);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:auto;
+    padding: 1rem;
+    max-width: 300px;
+    flex: 1 1 200px;
+}
+
+.botasa img,
+.botasb img {
+    width: 10rem;
+    object-fit: contain;
+}
+
+/* epp */
+.tubo,
+.guantes {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 90%;
+    position: relative;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 2rem;
+    
+}
+
+.tuboa,
+.tubob,
+.guantesa {
+   width: 90%;
+    background-color: rgba(149, 155, 71, 0.733);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:auto;
+    padding: 1rem;
+    max-width: 300px;
+    flex: 1 1 200px;
+}
+
+.tuboa img,
+.tubob img,
+.guantesa img {
+    width: 10rem;
+    object-fit: contain;
+}
+
+.precio {
+    color: rgb(165, 42, 42);
+    font-weight: 900;
+}
+
+.botoncompras {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(250, 250, 20);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: 1px solid color rgba(0, 0, 0, 0.973);
+    max-width: 200px;
+}
+
+
+.titulocascos {
+    text-transform: uppercase;
+    color: rgb(0, 0, 255);
+}
+
+
+/* GRID */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, auto)); 
+    grid-auto-rows: auto;
+    gap: 0px;
+    justify-items: center;
+    background-color: rgba(10, 20, 40);
+    width: 100%;
+    padding: 1rem;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 3 / 3;
+    min-height: 200px;
+}
+
+.div2 {
+    grid-area: 1 / 3 / 4 / 4;
+}
+
+.div3 {
+    grid-area: 3 / 1 / 4 / 3;
+}
+.div1{
+    width: 90%;
+    max-width: 300px;
+    background-color: rgb(10, 10, 124);
+    padding: 2px;
+    border: solid rgba(0, 0, 0, 0.952);
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.897);
+}
+.div2{
+    width: 90%;
+    max-width: 300px;        
+    background-color: rgb(10, 10, 124);
+    color: antiquewhite;
+    border: solid rgba(0, 0, 0, 0.952);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;   
+    word-break: break-word;   
+}
+.div3{
+     width: 90%;
+    max-width: 300px;
+    background-color: rgb(10, 10, 124);
+    padding: 20px;
+    border: solid rgba(0, 0, 0, 0.952);
+    border-radius: 20px;
+    box-sizing: border-box;
+    word-break: break-word;
+    color: rgba(255, 255, 255, 0.897);
+}
+
+.textoobjetivos {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+/* ubicacion*/
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mapa{
+    width: 90%;
+}
+
+/* footer */
+.footer-todo {
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+footer img {
+    height: 5rem;
+}
+
+.contacto,
+.redes,
+.footer-todo {
+    color: rgba(228, 226, 231, 0.89);
+    padding: 0.1rem;
+}
+@media only screen and (min-width: 900px){
+    ul{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .cascos-general, .ropa-general, .botas, .tubo, .guantes{
+        flex-direction: row;
+    }
+   .cascobul, .cascoros, .botasa,.botasb,.guantesa,.tuboa,.tubob{
+    width: 25rem;
+    height: auto;
+    max-height: 45rem;
+}
+.ropamsa p, .roparos p {
+        flex-grow: 1;
+        text-align: center;
+        font-size: 1rem;
+    }
+.ropamsa, .roparos {
+        width: 25rem;
+        height: 45rem;
+    }
+
+.ropamsa img,.roparos img {
+        width: 10rem;
+        max-height: 12rem;
+    }
+.contenedor {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        height: 40rem;
+        grid-gap: 1px;
+    }
+.logos {
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.div1 {
+        grid-area: 1 / 1 / 3 / 3;
+    }
+
+.div2 {
+        grid-area: 1 / 3 / 4 / 4;
+        width: 100%;
+        max-width: none;
+    }
+
+.div3 {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+ .ul {
+    flex-direction: column; /* Los li se apilan verticalmente */
+    align-items: flex-start;
+    }
+
+    .li {
+    width: 100%; /* Que ocupen el ancho completo */
+    }
+
+    .a{
+    padding: 12px;
+    
+    }
+
+    }
+    

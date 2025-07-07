@@ -5,8 +5,9 @@
     flex-direction: column;
     align-items: center;
 }
-%tituloequipos{
-color: rgba(181, 181, 196, 0.884);
+
+%tituloequipos {
+    color: rgba(181, 181, 196, 0.884);
     background-color: rgba(105, 101, 101, 0.288);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,20 +15,70 @@ color: rgba(181, 181, 196, 0.884);
     display: grid;
     place-items: center;
     text-align: center;
+    background-image: url(../Img/Presentacion/fondotitulos.png);
+    padding: 1rem;
+    font-size: 2rem;
+    min-height: 8vh;
+    text-transform: uppercase;
 }
-%alinaciontexto{
+
+%alinaciontexto {
     text-align: center;
     text-transform: uppercase;
 }
-%alineacionul{
+
+%alineacionul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-%alineacionropageneral{
-     display: flex;
+
+%alineacionropageneral {
+    display: flex;
     justify-content: center;
     align-items: stretch;
+}
+
+%alineacionropageneral2 {
+    justify-content: space-between;
+    height: auto;
+    padding: 1rem;
+    flex: 1 1 200px;
+}
+
+%botoncompras {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(250, 250, 20);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.973);
+    max-width: 200px;
+}
+
+%botas-tubo-guantes-general {
+    width: 100%;
+    position: relative;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+%tamañoimagenesproductos {
+    width: 10rem;
+    object-fit: contain;
+}
+
+%tamañoyfondoproductos {
+    width: 90%;
+    background-color: rgba(149, 155, 71, 0.733);
+    max-width: 300px;
 }
 
 * {
@@ -125,17 +176,10 @@ li:hover a {
     font-size: 2rem;
     margin-bottom: 50px;
     @extend %alinaciontexto;
-
-
 }
 
 .equipotitulo {
     @extend %tituloequipos;
-    background-image: url(../Img/Presentacion/fondotitulos.png);
-    padding: 1rem;
-    font-size: 2rem;
-    min-height: 8vh;
-
 }
 
 /* cascos */
@@ -148,49 +192,22 @@ li:hover a {
     flex-direction: column;
 }
 
-.cascobul {
-    width: 90%;
-    background-color: rgba(149, 155, 71, 0.733);
-    @extend %flexcolum;
-    justify-content: space-between;
-    height: auto;
-    padding: 1rem;
-    max-width: 300px;
-    flex: 1 1 200px;
-
-}
-
+.cascobul,
 .cascoros {
-    width: 90%;
-    background-color: rgba(149, 155, 71, 0.733);
+    @extend %tamañoyfondoproductos;
     @extend %flexcolum;
-    justify-content: space-between;
-    height: auto;
-    padding: 1rem;
-    max-width: 300px;
+    @extend %alineacionropageneral2;
 }
 
 .cascoimg {
     width: 70%;
-    max-height: 10rem;
-    object-fit: contain
+    @extend %tamañoimagenesproductos;
 }
 
 
 /* ropa */
-.ropa-general {
-    @extend %alineacionropageneral;
-    width: 100%;
-    position: relative;
-    gap: 1rem;
-    flex-direction: column;
-    padding: 2rem;
-}
-
 .ropamsa {
-    width: 90%;
-    max-width: 300px;
-    background-color: rgba(149, 155, 71, 0.733);
+    @extend %tamañoyfondoproductos;
     @extend %flexcolum;
     padding: 1rem;
     gap: 1rem;
@@ -198,15 +215,10 @@ li:hover a {
 }
 
 .roparos {
-    width: 90%;
-    max-width: 300px;
-    background-color: rgba(149, 155, 71, 0.733);
+    @extend %tamañoyfondoproductos;
     @extend %flexcolum;
-    justify-content: flex-start;
-    padding: 1rem;
+    @extend %alineacionropageneral2;
     gap: 1rem;
-    height: auto;
-    flex: 1 1 200px;
     box-sizing: content-box;
 }
 
@@ -216,72 +228,34 @@ li:hover a {
     text-align: center
 }
 
-.ropamsa img,
-.roparos img {
-    width: 70%;
-    max-height: 10rem;
-    object-fit: contain;
-}
-
 /* botas */
-.botas {
-    @extend %alineacionropageneral;
-    width: 100%;
-    position: relative;
-    gap: 1rem;
-    flex-direction: column;
-    padding: 2rem;
-    flex: 1 1 200px;
-}
-
 .botasa,
-.botasb {
-    width: 90%;
-    background-color: rgba(149, 155, 71, 0.733);
-    @extend %flexcolum;
-    justify-content: space-between;
-    height: auto;
-    padding: 1rem;
-    max-width: 320px;
-    flex: 1 1 200px;
-}
-
-.botasa img,
-.botasb img {
-    width: 10rem;
-    object-fit: contain;
-}
-
-/* epp */
-.tubo,
-.guantes {
-    @extend %alineacionropageneral;
-    width: 100%;
-    position: relative;
-    gap: 1rem;
-    flex-direction: column;
-    padding: 2rem;
-
-}
-
+.botasb,
 .tuboa,
 .tubob,
 .guantesa {
-    width: 90%;
-    background-color: rgba(149, 155, 71, 0.733);
+    @extend %tamañoyfondoproductos;
     @extend %flexcolum;
-    justify-content: space-between;
-    height: auto;
-    padding: 1rem;
-    max-width: 300px;
-    flex: 1 1 200px;
+    @extend %alineacionropageneral2;
 }
 
+/* epp */
+.ropa-general,
+.tubo,
+.guantes,
+.botas {
+    @extend %alineacionropageneral;
+    @extend %botas-tubo-guantes-general;
+}
+
+.botasa img,
+.botasb img,
 .tuboa img,
 .tubob img,
-.guantesa img {
-    width: 10rem;
-    object-fit: contain;
+.guantesa img,
+.ropamsa img,
+.roparos img {
+    @extend %tamañoimagenesproductos;
 }
 
 .precio {
@@ -290,19 +264,7 @@ li:hover a {
 }
 
 .botoncompras {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    width: 100%;
-    background-color: rgb(250, 250, 20);
-    border: none;
-    color: rgb(0, 0, 0);
-    font-weight: 800;
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.973);
-    max-width: 200px;
+    @extend %botoncompras;
 }
 
 
@@ -336,10 +298,6 @@ li:hover a {
     box-sizing: border-box;
     word-break: break-word;
     overflow-wrap: break-word;
-}
-
-.div2 {
-    color: rgba(250, 235, 215, 0.952);
 }
 
 .textotrayectoria,

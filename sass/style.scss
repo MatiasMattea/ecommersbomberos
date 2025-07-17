@@ -1,441 +1,542 @@
-// variables
-//extend
-%flexcolum {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-%tituloequipos {
-    color: rgba(181, 181, 196, 0.884);
-    background-color: rgba(105, 101, 101, 0.288);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    background-image: url(../Img/Presentacion/fondotitulos.png);
-    padding: 1rem;
-    font-size: 2rem;
-    min-height: 8vh;
-    text-transform: uppercase;
-}
+$color-boton-bg: rgb(250, 250, 20);
+$color-boton-texto: rgb(0, 0, 0);
+$color-boton-border: rgba(0, 0, 0, 0.973);
 
-%alinaciontexto {
-    text-align: center;
-    text-transform: uppercase;
-}
+$color-fondo-principal: rgb(10, 20, 40);
+$color-texto-principal: rgba(181, 181, 196, 0.884);
+$color-titulo-bg: rgba(105, 101, 101, 0.288);
 
-%alineacionul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+$color-titulo-texto: rgba(245, 245, 220, 0.938);
+$color-titulo-secundario: rgba(105, 101, 101, 0.548);
+$color-btn-finalizar: rgb(79, 170, 79);
 
-%alineacionropageneral {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-}
+%estiloropa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  padding: 1rem;
+  flex: 1 1 200px;
+  width: 90%;
+  max-width: 300px;
+  background-color: rgba(149, 155, 71, 0.733);
 
-%alineacionropageneral2 {
-    justify-content: space-between;
-    height: auto;
-    padding: 1rem;
-    flex: 1 1 200px;
-}
-
-%botoncompras {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    width: 100%;
-    background-color: rgb(250, 250, 20);
-    border: none;
-    color: rgb(0, 0, 0);
-    font-weight: 800;
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.973);
-    max-width: 200px;
-}
-
-%botas-tubo-guantes-general {
-    width: 100%;
-    position: relative;
-    gap: 1rem;
-    flex-direction: column;
-    padding: 2rem;
-}
-
-%tamañoimagenesproductos {
+  img {
     width: 10rem;
     object-fit: contain;
+  }
 }
 
-%tamañoyfondoproductos {
-    width: 90%;
-    background-color: rgba(149, 155, 71, 0.733);
-    max-width: 300px;
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-* {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+%boton-estilo {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  background-color: $color-boton-bg;
+  border: none;
+  color: $color-boton-texto;
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border: 1px solid $color-boton-border;
+  max-width: 200px;
 }
 
-ul {
-    list-style: none;
-    gap: 5rem;
-    display: inline-block;
-
-}
-
-li {
-    display: inline-block;
-    padding: 3px;
-}
-
-li:hover a {
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.788);
-}
-
-.titulo {
-    color: rgba(105, 101, 101, 0.548);
-}
-
-/* Estilos Header */
-
-.fondotitulo {
-    background-image: url(../Img/Presentacion/nuevofondohe.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 30rem;
-}
-
-
-.Logoempresa {
-    width: 30%;
-    max-width: 200px;
-    min-width: 80px;
-    height: auto;
-    display: block;
-}
-
-.fondotitulo-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
-
-.menusuperior ul li a {
-    color: rgba(255, 255, 255, 0.842);
-    text-decoration: none;
-    @extend %alineacionul;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.li {
-    width: 90%;
-}
-
-
-.nombreempresa {
-    color: rgba(255, 0, 0, 0.76);
-    text-transform: uppercase;
-    font-size: 3rem;
-
-}
-
-.sub {
-    color: rgba(245, 245, 245, 0.76);
-}
-
-/* Main */
-.main {
-    background-color: rgba(10, 20, 40);
-    padding: 0.5rem;
-}
-
-.cajatitulo {
-    @extend %alineacionul;
-}
-
-.tituloepp {
-    color: rgb(0, 0, 255);
-    font-size: 2rem;
-    margin-bottom: 50px;
-    @extend %alinaciontexto;
-}
-
-.equipotitulo {
-    @extend %tituloequipos;
-}
-
-/* cascos */
-.cascos-general {
-    @extend %alineacionropageneral;
-    width: 100%;
-    position: relative;
-    gap: 1rem;
-    padding: 2rem;
-    flex-direction: column;
-}
-
-.cascobul,
-.cascoros {
-    @extend %tamañoyfondoproductos;
-    @extend %flexcolum;
-    @extend %alineacionropageneral2;
-}
-
-.cascoimg {
-    width: 70%;
-    @extend %tamañoimagenesproductos;
-}
-
-
-/* ropa */
-.ropamsa {
-    @extend %tamañoyfondoproductos;
-    @extend %flexcolum;
-    padding: 1rem;
-    gap: 1rem;
-    height: auto;
-}
-
-.roparos {
-    @extend %tamañoyfondoproductos;
-    @extend %flexcolum;
-    @extend %alineacionropageneral2;
-    gap: 1rem;
-    box-sizing: content-box;
-}
-
-.ropamsa p,
-.roparos p {
-    font-size: 1rem;
-    text-align: center
-}
-
-/* botas */
 .botasa,
 .botasb,
 .tuboa,
 .tubob,
-.guantesa {
-    @extend %tamañoyfondoproductos;
-    @extend %flexcolum;
-    @extend %alineacionropageneral2;
+.guantesa,
+.roparos,
+.ropamsa,
+.cascobul,
+.cascoros {
+  @extend %estiloropa;
 }
 
-/* epp */
-.ropa-general,
-.tubo,
-.guantes,
-.botas {
-    @extend %alineacionropageneral;
-    @extend %botas-tubo-guantes-general;
-}
-
-.botasa img,
-.botasb img,
-.tuboa img,
-.tubob img,
-.guantesa img,
-.ropamsa img,
-.roparos img {
-    @extend %tamañoimagenesproductos;
-}
-
-.precio {
-    color: rgb(165, 42, 42);
-    font-weight: 900;
+.cajatitulo,
+.menusuperior ul li a {
+  @extend %flex-center;
 }
 
 .botoncompras {
-    @extend %botoncompras;
+  @extend %boton-estilo;
 }
 
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  gap: 5rem;
+  display: inline-block;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+li {
+  display: inline-block;
+  padding: 3px;
+
+  &:hover a {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.788);
+  }
+}
+
+.equipotitulo {
+  color: $color-texto-principal;
+  background-color: $color-titulo-bg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-image: url(../Img/Presentacion/fondotitulos.png);
+  padding: 1rem;
+  font-size: 2rem;
+  min-height: 8vh;
+  text-transform: uppercase;
+}
+
+.empresas-trabajo,
+.ubicacion h2,
+.tituloepp {
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-titulo-texto;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.ropa-general,
+.tubo,
+.guantes,
+.botas,
+.cascos-general {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  position: relative;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 2rem;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+  }
+}
+
+.botasa,
+.botasb,
+.tuboa,
+.tubob,
+.guantesa,
+.roparos,
+.ropamsa,
+.cascobul,
+.cascoros {
+  justify-content: space-between;
+  width: 90%;
+}
+
+.fondotitulo {
+  background-image: url(../Img/Presentacion/nuevofondohe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+
+.Logoempresa {
+  width: 30%;
+  max-width: 200px;
+  min-width: 80px;
+  height: auto;
+  display: block;
+}
+
+.fondotitulo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.li {
+  width: 90%;
+
+  @media (min-width: 900px) {
+    width: 100%;
+  }
+}
+
+.nombreempresa {
+  color: rgba(255, 0, 0, 0.76);
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.sub {
+  color: rgba(245, 245, 245, 0.76);
+}
+
+.main {
+  background-color: $color-fondo-principal;
+  padding: 0.5rem;
+}
+
+.tituloepp {
+  color: rgb(0, 0, 255);
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.cascos-general {
+  width: 100%;
+  position: relative;
+  gap: 1rem;
+  padding: 2rem;
+  flex-direction: column;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+  }
+}
+
+.cascoimg {
+  width: 70%;
+}
+
+.ropamsa {
+  padding: 1rem;
+  gap: 1rem;
+  height: auto;
+}
+
+.roparos {
+  gap: 1rem;
+  box-sizing: content-box;
+}
+
+.ropamsa p,
+.roparos p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.precio {
+  color: rgb(165, 42, 42);
+  font-weight: 900;
+}
 
 .titulocascos {
-    text-transform: uppercase;
-    color: rgb(0, 0, 255);
+  text-transform: uppercase;
+  color: rgb(0, 0, 255);
 }
 
-
-/* GRID */
-
 .contenedor {
-    @extend %flexcolum;
-    gap: 1.5rem;
-    background-color: rgba(10, 20, 40, 1);
-    width: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: $color-fondo-principal;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .div1,
 .div2,
 .div3 {
-    width: 90%;
-    max-width: 500px;
-    background-color: rgb(10, 10, 124);
-    color: rgba(255, 255, 255, 0.9);
-    border: solid rgba(0, 0, 0, 0.95);
-    border-radius: 20px;
-    padding: 1rem;
-    box-sizing: border-box;
-    word-break: break-word;
-    overflow-wrap: break-word;
+  width: 90%;
+  max-width: 500px;
+  background-color: rgb(10, 10, 124);
+  color: rgba(255, 255, 255, 0.9);
+  border: solid rgba(0, 0, 0, 0.95);
+  border-radius: 20px;
+  padding: 1rem;
+  box-sizing: border-box;
+  word-break: break-word;
+  overflow-wrap: break-word;
+
+  @media (min-width: 900px) {
+    width: 30%;
+  }
 }
 
 .textotrayectoria,
 .textovision,
 .textoobjetivos li {
-    font-size: 1rem;
-    line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .textoobjetivos {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin: 0;
-}
-
-/* ubicacion*/
-.empresas-trabajo,
-.ubicacion h2 {
-    color: rgba(245, 245, 220, 0.938);
-    font-size: 2rem;
-    @extend %alinaciontexto;
-    padding: 1rem;
-}
-
-.ubicacion {
-    @extend %flexcolum;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
 }
 
 .mapa {
-    width: 90%;
+  width: 90%;
 }
 
-/* footer */
 .footer-todo {
-    background-color: rgba(0, 0, 0, 0.795);
-
+  background-color: rgba(0, 0, 0, 0.795);
+  color: rgba(228, 226, 231, 0.89);
+  padding: 0.1rem;
 }
 
-footer img {
-    height: 5rem;
+.logoredes {
+  height: 5rem;
+  border-radius: 2rem;
+  width: 5rem;
 }
 
 .contacto,
-.redes,
-.footer-todo {
-    color: rgba(228, 226, 231, 0.89);
-    padding: 0.1rem;
+.redes {
+  color: rgba(228, 226, 231, 0.89);
+  padding: 0.1rem;
 }
 
-/* Carrucel */
-
-.carousel-inner img {
+.carousel-inner {
+  img {
     object-fit: contain;
     max-height: 150px;
     width: 100%;
+  }
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-size: 50% 50%;
+  background-size: 50% 50%;
 }
 
 .logos {
-    width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.carrusel-manual {
+  margin-left: 120px;
+
+  .ventana {
+    width: 200px;
     height: auto;
+    background-color: $color-titulo-texto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+    margin-left: -20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+      z-index: 10;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    .card-title {
+      font-weight: bold;
+      color: #dc3546;
+    }
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 120px;
+    }
+  }
 }
 
-.imagen-card{
-     border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    height: 150px;
-    object-fit: cover;
-}
-//carrucel matafuegos//
-
-
-
-
-
-@media (min-width: 900px) {
-    ul {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .cascos-general,
-    .ropa-general,
-    .botas,
-    .tubo,
-    .guantes {
-        flex-direction: row;
-    }
-
-    .cascobul,
-    .cascoros,
-    .botasa,
-    .botasb,
-    .guantesa,
-    .tuboa,
-    .tubob {
-        width: 25rem;
-        height: auto;
-    }
-
-    .ropamsa,
-    .roparos {
-        flex: 1 1 200px;
-        max-width: 300px;
-
-    }
+.imagen-card {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 150px;
+  object-fit: cover;
 }
 
-@media (min-width: 600px) {
-    .contenedor {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.cuadro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  margin: 0 auto;
+  border: 2px solid black;
+
+  .celda {
+    background-color:$color-titulo-texto;
+    border: 1px solid rgba(0, 0, 0, 0.945);
+    color: rgba(0, 0, 0, 0.979);
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    word-wrap: break-word;
+  }
+
+  .celda1 {
+    background-color: rgba(110, 46, 37, 0.863);
+    border: 1px solid rgba(0, 0, 0, 0.945);
+    color: rgba(56, 56, 56, 0.979);
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    word-wrap: break-word;
+  }
 }
 
-@media (min-width: 900px) {
+.titulomateriales {
+  text-align: center;
+  color: rgb(114, 17, 17);
+  text-transform: uppercase;
+}
 
-    .div1,
-    .div2,
-    .div3 {
-        width: 30%;
+hr {
+  border: none;
+  height: 5px;
+  background-color: rgb(80, 5, 5);
+}
+
+.imagenesredes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 1rem;
+
+  img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+
+    &:hover {
+      transform: scale(2);
+      z-index: 10;
+      position: relative;
     }
+  }
+
+  iframe {
+    width: 300px;
+    height: 170px;
+    border: none;
+  }
 }
 
 .ul {
-    flex-direction: column;
-    align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .li {
-    width: 100%;
+  width: 100%;
 }
 
 .a {
-    padding: 12px;
+  padding: 12px;
+}
+maincarrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $color-titulo-texto;
+}
+
+.carrito {
+  width: 30%;
+  min-height: 70%;
+  background: $color-titulo-texto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .items-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+  }
+
+  .item-carrito {
+    display: flex;
+    justify-content: space-between;
+    background: $color-titulo-texto;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid $color-titulo-texto;
+  }
+
+  .total {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .btn-finalizar {
+    width: 100%;
+    padding: 10px;
+    background-color: $color-btn-finalizar;
+    color: $color-titulo-texto;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $color-btn-finalizar;
+    }
+  }
 }

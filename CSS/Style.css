@@ -290,8 +290,10 @@ li:hover a {
   background-color: rgba(0, 0, 0, 0.795);
 }
 
-footer img {
+.logoredes {
   height: 5rem;
+  border-radius: 2rem;
+  width: 5rem;
 }
 
 .contacto,
@@ -317,6 +319,161 @@ footer img {
   width: 100%;
   height: auto;
 }
+
+.carrusel-manual {
+  margin-left: 120px;
+
+  .ventana {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+    margin-left: -120px;
+    transition: transform 0.3s ease, z-index 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.08);
+      z-index: 10;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.imagen-card{
+     border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 150px;
+    object-fit: cover;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 5px;
+}
+
+.cuadro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr); 
+  margin: 0 auto;
+  border: 2px solid black 
+}
+  .celda {
+    background-color:rgba(240, 255, 255, 0.979);
+    border: 1px solid rgba(0, 0, 0, 0.945);
+    color: rgba(0, 0, 0, 0.979);
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    word-wrap: break-word;
+  }
+.celda1{
+  background-color:rgba(110, 46, 37, 0.863);
+    border: 1px solid rgba(0, 0, 0, 0.945);
+    color: rgba(56, 56, 56, 0.979);
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    word-wrap: break-word;
+}
+.titulomateriales{
+  text-align: center;
+  color: rgb(114, 17, 17);
+  text-transform: uppercase;
+  
+}
+  .carrusel-manual {
+  .ventana {
+    width: 200px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.945);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+    margin-left: -20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+      z-index: 10;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    .card-title {
+      font-weight: bold;
+      color: #dc3546;
+    }
+
+    img {
+      object-fit:contain ;
+      width: 100%;
+      height: 120px;
+    }
+  }
+}
+hr{
+  border: none;
+  height: 5px;
+  background-color: rgb(80, 5, 5);
+}
+
+.imagenesredes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 1rem;
+}
+.imagenesredes img{
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+}
+.imagenesredes img:hover{
+   transform: scale(2);
+   z-index: 10;
+   position: relative;
+}
+
+.imagenesredes iframe {
+width: 300px;
+height: 170px;
+border: none;
+}
+
+
 
 @media only screen and (min-width: 900px) {
   ul {

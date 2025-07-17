@@ -365,8 +365,19 @@ footer img {
     height: auto;
 }
 
+.imagen-card{
+     border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 150px;
+    object-fit: cover;
+}
+//carrucel matafuegos//
 
-@media only screen and (min-width: 900px) {
+
+
+
+
+@media (min-width: 900px) {
     ul {
         flex-direction: row;
         justify-content: center;
@@ -398,7 +409,6 @@ footer img {
 
     }
 }
-
 
 @media (min-width: 600px) {
     .contenedor {

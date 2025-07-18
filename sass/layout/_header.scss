@@ -1,0 +1,47 @@
+.fondotitulo {
+  background-image: url(../Img/Presentacion/nuevofondohe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+
+.nombreempresa {
+  color: rgba(255, 0, 0, 0.76);
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.sub {
+  color: $color-titulo-texto;
+}
+
+.fondotitulo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.Logoempresa {
+  width: 30%;
+  max-width: 200px;
+  min-width: 80px;
+  height: auto;
+  display: block;
+}
+
+.cajatitulo,
+.menusuperior ul li a {
+  @extend %flex-center;
+}
+
+.empresas-trabajo,
+.ubicacion h2,
+.tituloepp {
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-titulo-texto;
+  font-size: 2rem;
+  padding: 1rem;
+}

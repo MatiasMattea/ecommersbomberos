@@ -1,0 +1,40 @@
+.proteccionpersonal {
+  padding: 20px;
+}
+
+.cascos-general,
+.ropa-general,
+.botas,
+.tubo,
+.guantes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cascobul,
+.cascoros,
+.ropamsa,
+.roparos,
+.botasa,
+.botasb,
+.tuboa,
+.tubob,
+.guantesa {
+  width: 300px;
+  text-align: center;
+}
+
+.cascoimg {
+  width: 100%;
+}
+
+.precio {
+  font-weight: bold;
+  color: green;
+}
+
+.equipotitulo {
+  font-size: 1.5em;
+  margin: 20px 0;
+}

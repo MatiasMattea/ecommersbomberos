@@ -1,0 +1,34 @@
+.fondotitulo {
+  text-align: center;
+}
+
+.nombreempresa {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.sub {
+  font-size: 1.2em;
+}
+
+.fondotitulo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logoempresa {
+  max-width: 150px;
+}
+
+.menusuperior ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menusuperior a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}

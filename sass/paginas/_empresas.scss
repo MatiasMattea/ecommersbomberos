@@ -1,0 +1,46 @@
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.div1,
+.div2,
+.div3 {
+  width: 300px;
+  margin: 10px;
+}
+
+.trayectoria,
+.vision,
+.objetivo {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.textotrayectoria,
+.textovision,
+.textoobjetivos {
+  font-size: 1em;
+}
+
+.empresas-trabajo {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.logos {
+  max-width: 200px;
+  margin: 10px auto;
+}
+
+.ubicacion {
+  text-align: center;
+}
+
+.mapa {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}

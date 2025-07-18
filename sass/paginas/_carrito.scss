@@ -1,0 +1,28 @@
+.maincarrito {
+  padding: 20px;
+  text-align: center;
+}
+
+.carrito {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.items-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 20px 0;
+}

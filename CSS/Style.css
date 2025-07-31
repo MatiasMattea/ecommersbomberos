@@ -38,6 +38,10 @@
   align-items: center;
 }
 
+li a {
+  color: rgb(93, 211, 7);
+}
+
 .botoncompras {
   display: inline-block;
   text-decoration: none;
@@ -65,12 +69,6 @@ ul {
   list-style: none;
   gap: 5rem;
   display: inline-block;
-}
-@media (min-width: 900px) {
-  ul {
-    flex-direction: row;
-    justify-content: center;
-  }
 }
 
 li {
@@ -122,15 +120,7 @@ li:hover a {
   flex-direction: column;
   padding: 2rem;
 }
-@media (min-width: 900px) {
-  .ropa-general,
-  .tubo,
-  .guantes,
-  .botas,
-  .cascos-general {
-    flex-direction: row;
-  }
-}
+
 
 .botasa,
 .botasb,
@@ -154,9 +144,9 @@ li:hover a {
 }
 
 .Logoempresa {
-  width: 30%;
+ 
   max-width: 200px;
-  min-width: 80px;
+  min-width: 175px;
   height: auto;
   display: block;
 }
@@ -347,7 +337,7 @@ li:hover a {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  color: rgb(29, 53, 87);
+  color: rgb(185, 171, 189);
   margin-bottom: 2rem;
 }
 .container .carrusel-manual {
@@ -410,29 +400,12 @@ li:hover a {
 .container .modal-content .modal-body ul li {
   margin-bottom: 0.5rem;
 }
-@media (max-width: 900px) {
-  .container .carrusel-manual .card.ventana {
-    width: 160px;
-    margin-left: -16px;
-  }
-}
-@media (max-width: 600px) {
-  .container .carrusel-manual .card.ventana {
-    width: 140px;
-    margin-left: -14px;
-  }
-}
-@media (max-width: 320px) {
-  .container .carrusel-manual {
-     width: 160px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+
   .container .carrusel-manual .card.ventana {
     width: 100%;
     margin-left: 0;
   }
-}
+
 
 /* cuadro redes incendio */
 .cuadro {
@@ -532,14 +505,14 @@ li:hover a {
 
 .titulomateriales {
   text-align: center;
-  color: rgb(114, 17, 17);
+  color: rgb(185, 171, 189);
   text-transform: uppercase;
 }
 
 hr {
   border: none;
   height: 5px;
-  background-color: rgb(80, 5, 5);
+  background-color: rgb(185, 171, 189);
 }
 
 .imagenesredes {
@@ -677,5 +650,41 @@ hr {
   border-radius: 2rem;
   width: 2rem;
 }
+}
+@media (min-width: 900px) {
+  ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .ropa-general,
+  .tubo,
+  .guantes,
+  .botas,
+  .cascos-general {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 900px) {
+  .container .carrusel-manual .card.ventana {
+    width: 160px;
+    margin-left: -16px;
+  }
+}
+@media (max-width: 600px) {
+  .container .carrusel-manual .card.ventana {
+    width: 140px;
+    margin-left: -14px;
+  }
+}
+@media (max-width: 320px) {
+  .container .carrusel-manual {
+    width: 250px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

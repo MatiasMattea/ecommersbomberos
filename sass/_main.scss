@@ -1,11 +1,17 @@
 @import 'base/variables';
 @import 'base/reset';
 
-@import 'components/header';
-@import 'components/footer';
-@import 'components/botones';
+@import 'componentes/buttons';
+@import 'componentes/footer';
+@import 'componentes/header';
 
-@import 'pages/home';
-@import 'pages/empresa';
-@import 'pages/vehiculos';
-@import 'pages/carrito';
+@import 'paginas/home';
+@import 'paginas/empresas';
+@import 'paginas/vehiculos';
+@import 'paginas/carrito';
+
+@import "paginas/preguntas-faq";
+@import "paginas/contactos1";
+
+@import "base/mixins";
+@import "components/cuadro";

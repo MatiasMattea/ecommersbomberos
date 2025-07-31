@@ -1,0 +1,51 @@
+@import "../base/mixins";
+
+.cuadro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin: 0 auto;
+  border: 2px solid rgb(0, 0, 0);
+
+  .celda, .celda1, .celda2, .celda3,
+  .celda1a, .celda2a, .celda3a {
+    @include celda-base;
+  }
+
+  .celda1a, .celda2a, .celda3a {
+    @include encabezado;
+  }
+
+  
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+
+    .celda1a, .celda2a, .celda3a {
+      order: initial;
+    }
+
+    .celda1 { order: 1; }
+    .celda2 { order: 3; }
+    .celda3 { order: 5; }
+
+    .celda1a { order: 0; }
+    .celda2a { order: 2; }
+    .celda3a { order: 4; }
+  }
+
+
+  @media (max-width: 320px) {
+    .celda, .celda1, .celda2, .celda3,
+    .celda1a, .celda2a, .celda3a {
+      padding: 10px;
+      font-size: 0.9rem;
+      min-height: 60px;
+    }
+  }
+}

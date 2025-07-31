@@ -1,0 +1,45 @@
+$color-primario: rgba(16, 81, 179, 0.774);
+$color-secundario: rgba(245, 245, 245, 0.973);
+$color-fondo-respuesta: rgba(245, 245, 245, 0.973);
+$color-texto-respuesta: rgb(51, 33, 33);
+$color-borde: rgb(0, 0, 0);
+$border-radius: 0.5rem;
+
+.faq-accordion {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  width: 100%;
+
+  .accordion-item {
+    border: 1px solid $color-borde;
+    border-radius: $border-radius;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+
+    .accordion-button {
+      background-color: $color-secundario;
+      color: $color-primario;
+      font-weight: 600;
+      padding: 1rem;
+
+          &.collapsed {
+        background-color: $color-secundario;
+      }
+
+      &:hover {
+        background-color: lighten($color-secundario, 10%);
+      }
+    }
+
+    .accordion-body {
+      background-color: $color-fondo-respuesta;
+      color: $color-texto-respuesta;
+      padding: 1rem 1.25rem;
+      font-size: 0.95rem;
+    }
+  }
+
+   @media (max-width: 600px) {
+    max-width: 100%;
+  }
+}

@@ -28,6 +28,7 @@
 .cascobul img,
 .cascoros img {
   width: 10rem;
+  height: 20rem;
   object-fit: contain;
 }
 
@@ -36,6 +37,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
 }
 
 li a {
@@ -96,6 +100,14 @@ li:hover a {
   text-transform: uppercase;
 }
 
+.inforopa, .tituloropa{
+  color: rgba(250, 235, 215, 0.979);
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: auto;
+
+}
+
 .empresas-trabajo,
 .ubicacion h2,
 .tituloepp {
@@ -118,6 +130,7 @@ li:hover a {
   position: relative;
   gap: 1rem;
   flex-direction: column;
+  flex-wrap: wrap;
   padding: 2rem;
 }
 
@@ -145,8 +158,8 @@ li:hover a {
 
 .Logoempresa {
  
-  max-width: 200px;
-  min-width: 175px;
+  max-width: 100px;
+  min-width: 100px;
   height: auto;
   display: block;
 }
@@ -195,11 +208,7 @@ li:hover a {
   padding: 2rem;
   flex-direction: column;
 }
-@media (min-width: 900px) {
-  .cascos-general {
-    flex-direction: row;
-  }
-}
+
 
 .cascoimg {
   width: 70%;
@@ -225,6 +234,9 @@ li:hover a {
 .precio {
   color: rgb(165, 42, 42);
   font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 }
 
 .titulocascos {
@@ -663,8 +675,20 @@ hr {
   .tubo,
   .guantes,
   .botas,
-  .cascos-general {
+  .cascos-general{ 
     flex-direction: row;
+    }
+}
+
+@media (max-width: 600px) {
+  .ropa-general,
+  .tubo,
+  .guantes,
+  .botas,
+  .cascos-general {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -685,6 +709,25 @@ hr {
     width: 250px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cajatitulo,
+  .menusuperior ul li a {
+    flex-direction: column;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .menusuperior ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .menusuperior ul li {
+    width: 100%;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -40,6 +40,7 @@
   padding: 10px;
   font-size: 18px;
   text-align: center;
+  
 }
 
 li a {
@@ -73,6 +74,7 @@ ul {
   list-style: none;
   gap: 5rem;
   display: inline-block;
+  
 }
 
 li {
